@@ -1,0 +1,254 @@
+﻿<Infos>
+  <Item name="Diag.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>28</b>
+      <b>82</b>
+      <b>16</b>
+      <b>245</b>
+      <b>79</b>
+      <b>89</b>
+      <b>34</b>
+      <b>85</b>
+      <b>202</b>
+      <b>21</b>
+      <b>93</b>
+      <b>122</b>
+      <b>83</b>
+      <b>62</b>
+      <b>217</b>
+      <b>100</b>
+    </Hash>
+  </Item>
+  <Item name="Ref Src.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>26</b>
+      <b>147</b>
+      <b>237</b>
+      <b>172</b>
+      <b>188</b>
+      <b>100</b>
+      <b>153</b>
+      <b>119</b>
+      <b>74</b>
+      <b>6</b>
+      <b>187</b>
+      <b>246</b>
+      <b>191</b>
+      <b>166</b>
+      <b>130</b>
+      <b>132</b>
+    </Hash>
+  </Item>
+  <Item name="HW_Analysis.database">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>158</b>
+      <b>33</b>
+      <b>208</b>
+      <b>125</b>
+      <b>176</b>
+      <b>195</b>
+      <b>224</b>
+      <b>76</b>
+      <b>8</b>
+      <b>228</b>
+      <b>90</b>
+      <b>232</b>
+      <b>2</b>
+      <b>248</b>
+      <b>247</b>
+      <b>241</b>
+    </Hash>
+  </Item>
+  <Item name="Time.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>38</b>
+      <b>214</b>
+      <b>137</b>
+      <b>211</b>
+      <b>154</b>
+      <b>52</b>
+      <b>24</b>
+      <b>225</b>
+      <b>141</b>
+      <b>92</b>
+      <b>26</b>
+      <b>40</b>
+      <b>116</b>
+      <b>162</b>
+      <b>66</b>
+      <b>47</b>
+    </Hash>
+  </Item>
+  <Item name="HW Analysis.ds">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>155</b>
+      <b>204</b>
+      <b>182</b>
+      <b>58</b>
+      <b>211</b>
+      <b>173</b>
+      <b>218</b>
+      <b>154</b>
+      <b>222</b>
+      <b>227</b>
+      <b>58</b>
+      <b>160</b>
+      <b>50</b>
+      <b>68</b>
+      <b>170</b>
+      <b>164</b>
+    </Hash>
+  </Item>
+  <Item name="County.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>53</b>
+      <b>82</b>
+      <b>179</b>
+      <b>10</b>
+      <b>188</b>
+      <b>122</b>
+      <b>215</b>
+      <b>209</b>
+      <b>77</b>
+      <b>5</b>
+      <b>108</b>
+      <b>136</b>
+      <b>40</b>
+      <b>18</b>
+      <b>133</b>
+      <b>93</b>
+    </Hash>
+  </Item>
+  <Item name="Branch.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>17</b>
+      <b>43</b>
+      <b>132</b>
+      <b>230</b>
+      <b>222</b>
+      <b>105</b>
+      <b>40</b>
+      <b>149</b>
+      <b>74</b>
+      <b>180</b>
+      <b>107</b>
+      <b>89</b>
+      <b>50</b>
+      <b>33</b>
+      <b>211</b>
+      <b>75</b>
+    </Hash>
+  </Item>
+  <Item name="Patient Referral.partitions">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>11</b>
+      <b>73</b>
+      <b>198</b>
+      <b>135</b>
+      <b>53</b>
+      <b>89</b>
+      <b>221</b>
+      <b>246</b>
+      <b>127</b>
+      <b>140</b>
+      <b>6</b>
+      <b>163</b>
+      <b>125</b>
+      <b>208</b>
+      <b>233</b>
+      <b>150</b>
+    </Hash>
+  </Item>
+  <Item name="Patient Referral.cube">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>52</b>
+      <b>199</b>
+      <b>51</b>
+      <b>133</b>
+      <b>101</b>
+      <b>28</b>
+      <b>58</b>
+      <b>186</b>
+      <b>29</b>
+      <b>57</b>
+      <b>171</b>
+      <b>57</b>
+      <b>52</b>
+      <b>175</b>
+      <b>253</b>
+      <b>54</b>
+    </Hash>
+  </Item>
+  <Item name="Payor.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>47</b>
+      <b>183</b>
+      <b>72</b>
+      <b>204</b>
+      <b>17</b>
+      <b>167</b>
+      <b>191</b>
+      <b>73</b>
+      <b>81</b>
+      <b>183</b>
+      <b>186</b>
+      <b>30</b>
+      <b>171</b>
+      <b>84</b>
+      <b>11</b>
+      <b>32</b>
+    </Hash>
+  </Item>
+  <Item name="Patient Referral.dsv">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>37</b>
+      <b>58</b>
+      <b>69</b>
+      <b>69</b>
+      <b>1</b>
+      <b>88</b>
+      <b>14</b>
+      <b>181</b>
+      <b>173</b>
+      <b>162</b>
+      <b>152</b>
+      <b>242</b>
+      <b>48</b>
+      <b>230</b>
+      <b>2</b>
+      <b>103</b>
+    </Hash>
+  </Item>
+  <Item name="Date of Admission.dim">
+    <Time>633396377960000000</Time>
+    <Hash length="16">
+      <b>201</b>
+      <b>83</b>
+      <b>217</b>
+      <b>160</b>
+      <b>227</b>
+      <b>237</b>
+      <b>140</b>
+      <b>57</b>
+      <b>199</b>
+      <b>117</b>
+      <b>241</b>
+      <b>105</b>
+      <b>68</b>
+      <b>52</b>
+      <b>121</b>
+      <b>179</b>
+    </Hash>
+  </Item>
+</Infos>

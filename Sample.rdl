@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2007/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Value>Sample IDE Configuration.</Value>
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Top>1.125in</Top>
+        <Left>1in</Left>
+        <Height>0.625in</Height>
+        <Width>5.75in</Width>
+        <DataElementOutput>NoOutput</DataElementOutput>
+        <Style>
+          <FontSize>28pt</FontSize>
+          <Color>Red</Color>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>4.625in</Height>
+    <Style />
+  </Body>
+  <Width>9.875in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>2de5c119-a734-46ed-b861-f86111b6ccfa</rd:ReportID>
+</Report>

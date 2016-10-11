@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="Pro_SSRS">
+      <DataSourceReference>Pro_SSRS</DataSourceReference>
+      <rd:DataSourceID>6cbf0df8-682a-4b4e-9635-077f18880246</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet2">
+      <Fields>
+        <Field Name="EmployeeID">
+          <DataField>EmployeeID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Lastname">
+          <DataField>Lastname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpTblID">
+          <DataField>EmpTblID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EmploymentType">
+          <DataField>EmploymentType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HireDate">
+          <DataField>HireDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Discipline">
+          <DataField>Discipline</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="patlastname">
+          <DataField>patlastname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="patfirstname">
+          <DataField>patfirstname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ChargeServiceStartDate">
+          <DataField>ChargeServiceStartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DisciplineID">
+          <DataField>DisciplineID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Pro_SSRS</DataSourceName>
+        <CommandText>SELECT     Employee.EmployeeID, Employee.LastName AS Lastname, Employee.FirstName, Employee.EmployeeTblID AS EmpTblID, 
+                      Employee.EmploymentTypeID AS EmploymentType, Employee.HireDate, Discipline.Dscr AS Discipline, Patient.LastName AS patlastname, 
+                      Patient.FirstName AS patfirstname, Trx.ChargeServiceStartDate, Discipline.DisciplineID
+FROM         Employee INNER JOIN
+                      Trx INNER JOIN
+                      ChargeInfo ON Trx.ChargeInfoID = ChargeInfo.ChargeInfoID ON Employee.EmployeeTblID = ChargeInfo.EmployeeTblID INNER JOIN
+                      Discipline ON Employee.DisciplineTblID = Discipline.DisciplineTblID INNER JOIN
+                      Patient ON Trx.PatID = Patient.PatID
+WHERE     (Trx.ChargeServiceStartDate BETWEEN @DateFrom AND @DateTo)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@DateFrom">
+            <Value>=Parameters!DateFrom.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DateTo">
+            <Value>=Parameters!DateTo.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <Height>2.25in</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="Branch_URL">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>WebServer1</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>My Branch</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>WebServer1</Value>
+            <Label>Branch1</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>WebServer2</Value>
+            <Label>Branch2</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>WebServer3</Value>
+            <Label>Branch3</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DateFrom">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>01/01/01</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DateFrom</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DateTo">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Now()</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DateTo</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>10in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>4dc57d43-9353-4ff9-83e0-6f5ae34975a0</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

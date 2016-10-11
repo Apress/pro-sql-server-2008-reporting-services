@@ -1,0 +1,84 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>9.0.1187.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmR3ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9EYXRhV2FyZWhvdXNlL0Rlc2lnbmVyLzEuMCI+DQogIDxFbmFibGVkPmZhbHNlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+PC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+PC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPjwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+PC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <Database>
+    <Name>HW_Analysis.database</Name>
+    <FullPath>HW_Analysis.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Patient Referral.cube</Name>
+      <FullPath>Patient Referral.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Patient Referral.partitions</Name>
+          <FullPath>Patient Referral.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>County.dim</Name>
+      <FullPath>County.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ref Src.dim</Name>
+      <FullPath>Ref Src.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Branch.dim</Name>
+      <FullPath>Branch.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Diag.dim</Name>
+      <FullPath>Diag.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Payor.dim</Name>
+      <FullPath>Payor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date of Admission.dim</Name>
+      <FullPath>Date of Admission.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>HW Analysis.ds</Name>
+      <FullPath>HW Analysis.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Patient Referral.dsv</Name>
+      <FullPath>Patient Referral.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>HW Analysis</Id>
+            <Name>HW Analysis</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=HW_Analysis</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>HW Analysis</Id>
+            <Name>HW Analysis</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

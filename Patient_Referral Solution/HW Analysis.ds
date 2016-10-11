@@ -1,0 +1,13 @@
+﻿<DataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xsi:type="RelationalDataSource" dwd:design-time-name="9c458d5b-1c25-467e-9119-62a4f01f0793" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HW Analysis</ID>
+  <Name>HW Analysis</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <ConnectionString>Provider=SQLOLEDB.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=HW_Analysis</ConnectionString>
+  <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+  <ImpersonationInfo>
+    <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </ImpersonationInfo>
+  <Timeout>PT0S</Timeout>
+</DataSource>

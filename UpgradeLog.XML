@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Pro_SSRS">
+</Property><Property Name="Solution File" Value="D:\SSRS_4_2008_Ap\Pro_SSRS_Project\Pro_SSRS.sln">
+</Property><Property Name="Date" Value="Tuesday, February 26, 2008">
+</Property><Property Name="Time" Value="16:24 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Pro_SSRS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Pro_SSRS.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Patient Referral</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>m8y2OtOt2pre4zqgMkSqpA==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>HW Analysis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>JTpFRQFYDrWtopjyMOYCZw==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>HW Analysis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NVKzCrx619FNBWyIKBKFXQ==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>County</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GpPtrLxkmXdKBrv2v6aChA==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Ref Src</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ESuE5t5pKJVKtGtZMiHTSw==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Branch</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HFIQ9U9ZIlXKFV16Uz7ZZA==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Diag</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>L7dIzBGnv0lRt7oeq1QLIA==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Payor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JtaJ05o0GOGNXBoodKJCLw==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yVPZoOPtjDnHdfFpRDR5sw==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>Dim Admit Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>NMczhWUcOrodOas5NK/9Ng==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PMC0nGhzVZ3fZ/jAajfdDplg==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+        <ID>
+          <String>HW Analysis</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>niHQfbDD4EwI5FroAvj38Q==2/26/2008 3:49:56 PM2/26/2008 3:49:56 PM</TimeStamp>
+      <ID>
+        <String>HW_Analysis</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2008-07-13T15:53:08Z</LastDeployed>
+</DeploymentSnapshot>

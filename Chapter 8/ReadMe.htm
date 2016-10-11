@@ -1,0 +1,39 @@
+<html>
+<body style="font-family: Verdana">
+    The examples in this chapter depend on the proper initial setup and configuration
+    of your system. It will also use the same database that was used in previous
+    chapters.<br />
+    <br />
+    This example was designed to all be run off the same system with references set
+    to localhost for the database and localhost for the report server. If this doesn't match
+    your configuration you will need to update the datasources and the deployment URLs
+    in the Reports project of the solution. Change the datasources SQL server by editing
+    it directly in the datasource, edit the properties of the Reports project to set
+    the URLS. You should also update the SSRSWebService Web Reference by right
+    clicking and selecting Update Web Reference. Set the Web Reference URL in its properties
+    first if SQL Reporting Services 2008 is running on a server other than localhost.<br />
+    <br />
+    You will need to deploy the report and datasource to your SSRS 2008 server before
+    you can run the viewer examples. Since this example builds off the Chapter 6 example
+    we continue to deploy our reports to the Chapter_6 folder on your SSRS 2008 server.
+    Scheduled
+    reports require credentials in the datasource since they are not run interactively.
+    After deploying the reports in this sample you will need to change the datasource in the Pro_SSRS folder to use stored credentials in order use these samples.
+    If you are using Windows Authentication for your SQL Server you will have
+    to use Report Manager or SQL Server Management Studio (SSMS) and after you enter
+    the username (in Domain\User format) and password select the Use as Windows credentials
+    when connecting to the data source option.<br />
+    <br />
+    You will also need to setup Shared Schedules on your SSRS 2008 server. You can do this through the Report Server web interface or using SQL Server Management Studio (SSMS). You will need
+    SSRS 2008 System Administrator rights in order to have this option available to
+    you.<br />
+    <br />
+    If you want to run the Local report sample of the viewer you will need to copy the Employee.xml
+    file that appears in the Solutions Solution Items folder (located on disk in the
+    Solutions Data Files folder) to C:\Temp\. You will also need to be sure that these
+    files have the proper access permissions.
+    <br />
+    <br />
+
+</body>
+</html>

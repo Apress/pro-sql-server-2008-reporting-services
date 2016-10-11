@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SSRS_Viewer_RVC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SSRS_Viewer_RVC_SSRSWebService_ReportingService2005" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://uafcqasrv111/ReportServer/ReportService2005.asmx</Value>
+    </Setting>
+    <Setting Name="SRS_Viewer_Control_SSRSWebService_ReportingService2005" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">/ReportService2005.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

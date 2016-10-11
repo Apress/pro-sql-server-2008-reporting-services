@@ -1,0 +1,69 @@
+<html>
+<body style="font-family: Verdana">
+    The examples in this chapter depend on the proper initial setup and configuration
+    of your system. It will also use the same database that was used in previous
+    chapters.<br />
+    <br />
+    This example was designed to all be run off the same system with references set
+    to localhost for the database and localhost for the report server. If this doesn't match
+    your configuration you will need to update the datasources and the deployment URLs
+    in the Reports project of the solution. Change the datasources SQL server by editing
+    it directly in the datasource, edit the properties of the Reports project to set
+    the URLS. You will also need to edit the Web.Config in the Employee Web Service
+    to set the appropropriate server in the connectionStrings section.<br />
+    <br />
+    In order to run the examples in this chapter you will need to copy the Employee.xsd
+    and the Employee.xml
+    file that appear in the Solutions Solution Items folder (located
+    on disk in the Solutions Data Files folder) to C:\Temp\. You will also
+    need to be sure that these files have the proper access permissions.<br />
+    <br />
+    This is discussed below and in the chapter but remember the Employee.dll assembly
+    must be copied to the report server along with the reports and datasource in
+    order for the sample reports to run properly.<br />
+    <br />
+    The example is also designed to output the Employee assembly to the default output
+    folders. In order for the samples to run the Employee.dll assembly file will have
+    to be copied to the PrivateAssemblies folder of Visual Studio for running in Visual
+    Studio and to the ReportServer\bin folder of SQL Server Reporting Services for runnng
+    on the server. By default these folders are:<br />
+    <br />
+    C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies<br />
+    C:\Program Files\Microsoft SQL Server\MSRS10.MSSQLSERVER\Reporting Services\ReportServer\bin<br />
+    <br />
+    If you want to change the output path names in your project you will need to set
+    them by selecting the Employee project and then Project, Employee Properties from
+    the menu. On the Build tab set the proper output folder depending on your configuration.
+    Also, by default a member of the Users group won't have write permission on these
+    folders so you will need to set the proper permissions or have your systems administrator
+    do so for you. Of course if your SQL Reporting Server is on another system you will
+    have to manually copy the DLL to that location before running the reports. You should
+    build the Employee project in Debug and Release modes to make sure that it builds
+    with the output setup as it is. If not change the output folder appropriately or
+    set the defaults to bin\Debug and bin\Release and copy the files to the PrivateAssemblies
+    and ReportServer\bin folders manually.<br />
+    <br />
+    If you try to deploy the reports and get an error such as "Error 1 Error while loading
+    code module: ‘Employee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null’.
+    Details: Could not load file or assembly 'Employee, Version=1.0.0.0, Culture=neutral,
+    PublicKeyToken=null' or one of its dependencies. The system cannot find the file
+    specified." it more than likely means that the Employee.dll assembly is not properly
+    deployed in the report servers bin folder.<br />
+    <br />
+    You will also find a sample of the rssrvpolicy.config and RSPreviewPolicy.config
+    files in the Policy Files folder.
+    It is not recommended that you copy these files
+    over your existing files since other
+    changes may have already been made to them
+    but it can serve as an example especially on
+    the placement of the elements within the file.
+    <br />
+    <br />
+    To try the Employee Web Service you will need to first publish and start the website
+    by selecting the Employee Web Service Project and then right clicking and selecting
+    Publish Web Site. You should then right click and View in Browser. This will cause
+    the ASP.NET Development Server to start and you should see a small icon in your
+    task tray indicating it is running.
+
+</body>
+</html>
